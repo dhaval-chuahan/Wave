@@ -34,6 +34,25 @@ width:50%;
     font-size: 3rem;
     margin-left: 2rem;
 }
+.section2{
+    background-image: url(https://bootstrapbrain.com/demo/templates/wave/wave-lite/assets/img/cta/cta-img-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+}
+.span2{
+    background: linear-gradient(120deg, #e4a0a1, #e4a0a1);
+    background-position: 0 80%;
+    background-size: 100% 20%;
+    background-repeat: no-repeat;
+}
+.div-text{
+    position: absolute;
+    margin-top: -25rem ;
+    margin-left: 10% !important;
+}
 
 @media (max-width:991px){
     #flex{
