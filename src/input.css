@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.mb-lg-0{
+    margin:0 auto;
+}
+.header-1{
+    background:#e1ebfa;
+    width:100%;
+    
+}
+.img-header{
+    width:100%;
+    border-radius:61% 39% 39% 61% / 66% 52% 48% 34% ;
+}
+.font-w{
+width:50%;
+}
+.fw-normal{
+    font-family: "Playwrite BE VLG", cursive;
+    color:#A30000;
+    font-size: larger;
+    background:linear-gradient(120deg,#fff3cd, #fff3cd);
+    background-size: 100% 20%;
+    background-position: 0% 80%;
+    background-repeat: no-repeat;
+}
+
+.fw-bolder {
+    font-weight: bolder !important;
+    width: 96%;
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+
+@media (max-width:991px){
+    #flex{
+        flex-direction:column;
+    }
+}
