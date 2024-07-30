@@ -27,11 +27,14 @@ width:50%;
     background-position: 0% 80%;
     background-repeat: no-repeat;
 }
+.text-f{
+    border-bottom: linear-gradient(120deg,#e4a0a1,#e4a0a1);
+}
 
 .fw-bolder {
     font-weight: bolder !important;
     width: 96%;
-    font-size: 3rem;
+    font-size: 35rem;
     margin-left: 2rem;
 }
 .section2{
@@ -40,7 +43,7 @@ width:50%;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 80vh;
+    height: 100vh;
 }
 .span2{
     background: linear-gradient(120deg, #e4a0a1, #e4a0a1);
@@ -50,12 +53,32 @@ width:50%;
 }
 .div-text{
     position: absolute;
-    margin-top: -25rem ;
+    margin-top: -32rem ;
     margin-left: 10% !important;
 }
+.curs{
+    font-weight: 700;
+}
+.image{
+    margin-top: 1rem;
+}
+
+
+
 
 @media (max-width:991px){
     #flex{
         flex-direction:column;
+    }
+}
+@media (min-width:320px){
+    .div-text{
+        position: absolute;
+        margin-top: -32rem ;
+        margin-left: 1% !important;
+    }
+    .fw-bolder{
+        margin-left: 0rem;
+        font-size: 40px;
     }
 }

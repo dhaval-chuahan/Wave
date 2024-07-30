@@ -610,6 +610,18 @@ video {
   margin-bottom: 2rem;
 }
 
+.tw-mt-16 {
+  margin-top: 4rem;
+}
+
+.tw-block {
+  display: block;
+}
+
+.tw-inline-block {
+  display: inline-block;
+}
+
 .tw-flex {
   display: flex;
 }
@@ -624,6 +636,10 @@ video {
 
 .tw-h-5\/6 {
   height: 83.333333%;
+}
+
+.tw-w-96 {
+  width: 24rem;
 }
 
 .tw-w-full {
@@ -642,12 +658,24 @@ video {
   justify-content: center;
 }
 
-.tw-rounded-3xl {
-  border-radius: 1.5rem;
+.tw-justify-between {
+  justify-content: space-between;
 }
 
 .tw-rounded {
   border-radius: 0.25rem;
+}
+
+.tw-rounded-2xl {
+  border-radius: 1rem;
+}
+
+.tw-rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.tw-rounded-full {
+  border-radius: 9999px;
 }
 
 .tw-border-0 {
@@ -672,13 +700,48 @@ video {
   background-color: rgb(30 64 175 / var(--tw-bg-opacity));
 }
 
-.tw-bg-transparent {
-  background-color: transparent;
+.tw-bg-green-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 252 231 / var(--tw-bg-opacity));
+}
+
+.tw-bg-green-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
+}
+
+.tw-bg-orange-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 237 213 / var(--tw-bg-opacity));
+}
+
+.tw-bg-orange-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 215 170 / var(--tw-bg-opacity));
+}
+
+.tw-bg-orange-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 247 237 / var(--tw-bg-opacity));
+}
+
+.tw-bg-pink-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 231 243 / var(--tw-bg-opacity));
 }
 
 .tw-bg-red-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(153 27 27 / var(--tw-bg-opacity));
+}
+
+.tw-bg-transparent {
+  background-color: transparent;
+}
+
+.tw-bg-yellow-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 252 232 / var(--tw-bg-opacity));
 }
 
 .tw-object-cover {
@@ -691,20 +754,16 @@ video {
      object-position: center;
 }
 
-.tw-p-6 {
-  padding: 1.5rem;
+.tw-p-3 {
+  padding: 0.75rem;
 }
 
 .tw-p-4 {
   padding: 1rem;
 }
 
-.tw-p-3 {
-  padding: 0.75rem;
-}
-
-.tw-p-5 {
-  padding: 1.25rem;
+.tw-p-6 {
+  padding: 1.5rem;
 }
 
 .tw-px-5 {
@@ -722,12 +781,26 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.tw-py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.tw-pb-4 {
+  padding-bottom: 1rem;
+}
+
 .tw-pt-10 {
   padding-top: 2.5rem;
 }
 
 .tw-text-center {
   text-align: center;
+}
+
+.tw-text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .tw-text-3xl {
@@ -748,11 +821,6 @@ video {
 .tw-text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.tw-text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
 
 .tw-font-bold {
@@ -832,10 +900,14 @@ video {
   background-repeat: no-repeat;
 }
 
+.text-f{
+  border-bottom: linear-gradient(120deg,#e4a0a1,#e4a0a1);
+}
+
 .fw-bolder {
   font-weight: bolder !important;
   width: 96%;
-  font-size: 3rem;
+  font-size: 35rem;
   margin-left: 2rem;
 }
 
@@ -845,7 +917,7 @@ video {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: 80vh;
+  height: 100vh;
 }
 
 .span2{
@@ -857,8 +929,16 @@ video {
 
 .div-text{
   position: absolute;
-  margin-top: -25rem ;
+  margin-top: -32rem ;
   margin-left: 10% !important;
+}
+
+.curs{
+  font-weight: 700;
+}
+
+.image{
+  margin-top: 1rem;
 }
 
 @media (max-width:991px){
@@ -867,8 +947,17 @@ video {
   }
 }
 
-.hover\:tw-border:hover {
-  border-width: 1px;
+@media (min-width:320px){
+  .div-text{
+    position: absolute;
+    margin-top: -32rem ;
+    margin-left: 1% !important;
+  }
+
+  .fw-bolder{
+    margin-left: 0rem;
+    font-size: 40px;
+  }
 }
 
 .hover\:tw-border-solid:hover {
@@ -890,14 +979,14 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.hover\:tw-text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .hover\:tw-text-red-800:hover {
   --tw-text-opacity: 1;
   color: rgb(153 27 27 / var(--tw-text-opacity));
+}
+
+.hover\:tw-text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:tw-duration-500:hover {
@@ -907,6 +996,26 @@ video {
 .focus\:tw-outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+@media not all and (min-width: 640px) {
+  .max-sm\:tw-block {
+    display: block;
+  }
+
+  .max-sm\:tw-w-screen {
+    width: 100vw;
+  }
+
+  .max-sm\:tw-text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .max-sm\:tw-text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 640px) {
